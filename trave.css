@@ -1,0 +1,56 @@
+body{
+	background-image: url(img/travel_back.jpg);
+	background-size: cover;
+}
+.title{
+	height: 150px;
+	text-align: center;
+	font-size: 37px;
+	font-weight: 800;
+	font-style: italic;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+	color: #2f0455;
+	background-image: url(img/travel_title.jpg);
+	background-size: cover;
+}
+.day{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.day ul li{                          /* 整体布局 */
+	width: 100px;
+	display: flex;
+	border: 1px dashed;
+	margin: 30px;
+	text-align: center;
+}
+#li1:hover::after{
+	content: '午饭：蟹黄金捞 * 2 + 蟹粉小笼';                  /* 盒子后面加鼠标放上去后的内容 */
+}
+#li2:hover::after{
+	content: '晚饭：聚宝盐水鸭 + 芋泥香酥鸭 + 甜品小吃';
+}
+#li3:hover::after{
+	content: '早餐：芳婆糕团店 * 乌饭麻团';
+}
+#li4:hover::after{
+	content: '午饭：小藩记鸭血粉丝汤 + 鸭血混沌';
+}
+#li5:hover::after{
+	content: '晚饭：易记皮肚面 * 金宏兴鸭子';
+}
+#li6:hover::after{
+	content: '早餐：古早万丹 + 许阿姨青团';
+}
+#li7:hover::after{
+	content: '早饭：冰糖蜜汁藕 + 水晶米糕';
+}
+.foot{
+	width: 100%;
+	background-color: plum;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+	color: #FFF;
+}

@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;     /*去掉li的小圆点*/
+	text-decoration: none;
+}
+body,html{
+	height: 100%;
+}
+.navas{
+	width: 100%;
+	height: 100%;
+	position: relative;       /* 父亲相对定位*/
+	font-weight: 500;
+	font-style: italic;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.navas li{
+	height: 100%;
+}
+/* one */
+.navas>li:nth-of-type(1),.navas>li:nth-of-type(2){
+	background-image: url("img/about_back.jpg");
+	background-size: 100vw 100vh;
+}
+#nava_1{
+	width: 400px;
+	height: 600px;
+	box-shadow: 7px 1px 13px;
+	position: absolute;         /*孩子绝对定位*/
+	left: 37%;
+	top: 8%;
+}
+#nava_1 .nava_1_head{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-image: url("img/about_head.jpg");
+	background-size: cover;                 /* 背景图片大小 */
+	background-position: -10px;            /* 背景图片定位 */
+	position: absolute;
+	top: 2%;
+	left: 32%;
+}
+#nava_1 p{
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: .3rem;
+	color: white;
+	position: absolute;
+}
+
+#nava_1 .nava_1_well{
+	top:32%;
+	left: 25%;
+}
+#nava_1 .nava_1_hr{
+	position: absolute;
+	width: 330px;
+	top: 40%;
+	left: 11%
+}
+#nava_1 .nava_1_name{
+	top: 46%;
+	left: 42%;
+}
+#nava_1 .nava_1_job{
+	top: 56%;
+	left: 25%;
+}
+#nava_1 .nava_1_number{
+	top: 66%;
+	left: 23%;
+}
+
+/* two */
+.nava2 p,.nava2 li{
+	color: white;
+}
+.nava2 p{
+	width: 100%;
+	padding-top: 60px;
+	text-align: center;
+	letter-spacing: .1rem;          /* 字间距 */
+}
+.nava_title{
+	font-size: 30px;
+}
+.nava_img{
+	width: 360px;
+	height: 280px;
+	border-radius: 50%;
+	background-image: url("img/nava_img.jpg");
+	background-size: 450px;
+	background-position: 20px;
+	position: absolute;
+	top: 35%;
+	left: 15%;
+}
+.nava_brief_ul{
+	width: 680px;
+	position: absolute;
+	right: 15%;
+	top: 42%;
+}
+.nava_brief_ul li{
+	float: left;                /* 让每个li浮动起来 */
+	width: 300px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	letter-spacing: .2rem;
+}
+
+
+/* three */
+.nava2{
+	background-image: url("img/about_back2.jpg");
+	position: relative;
+	overflow: hidden;                    /* 超出部分隐藏 */
+}
+.nava_img1,.nava_img2{
+	width: 480px;
+	height: 300px;
+	background-size: cover;
+	position: absolute;
+}
+.nava_img1{
+	top: 50%;
+	left: 65%;
+	background-image: url("img/nava_img1.webp");
+	transform: rotateZ(-10deg);                 /* 旋转python,html图片,如下 */
+}
+.nava_img2{
+	top: 35%;
+	left: 10%;
+	background-image: url("img/nava_img2.webp");
+	transform: rotateZ(30deg);
+}
+
+/* 小圆点 */
+.min_navas{
+	position: fixed;
+	top: 50%;
+	right: 5%;
+}
+.min_navas li{
+	width: 15px;
+	height: 15px;
+	margin-bottom: 15px;
+	background-color: aliceblue;
+	border-radius: 50%;
+}
+
+/* 向下箭头 */
+#next{
+	width: 70px;
+	border: 3px solid #b366ff;       /* 箭头给边框 */
+	border-radius: 50%;
+	position: fixed;
+	bottom: 5%;
+	left: 47.8%;
+	z-index: 99;
+	cursor: pointer;
+}

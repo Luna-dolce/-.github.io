@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>留言板</title>
+		<link rel="stylesheet" type="text/css" href="common.css" />
+		<link rel="stylesheet" type="text/css" href="message.css" />
+    </head>
+<body>
+    	<!--返回首页-->
+		<div class='ribbon'>
+		  <a href='./index.html'><span><< 返回首页</span></a>
+		</div>
+    	<div id="mainbg">
+            
+            <!--留言板表格表单-->
+            <div class="first">
+            	<div class="second">
+            		<form>
+            			<table>
+            				<thead>
+            					<tr>
+            						<th width="10%"></th>
+            						<th width="25%"></th>
+            						<th width="10%"></th>
+            					</tr>
+            				</thead>
+            				<tr>
+            					<td class="one">
+            						<label for="id">方式&nbsp;：</label>
+            					</td>
+            					<td>
+            						<select id="id" class="tdall">
+            							<option value="##">&nbsp;</option>
+            							<option value="ming">姓名</option>
+            							<option value="ni">匿名</option>
+            							<option value="qni">昵称</option>
+            						</select>
+            					</td>
+            					<td class="two">
+            						<label for="name">姓名&nbsp;:</label>
+            					</td>
+            					<td>
+            						<input type="text" id="name" class="name" />
+            					</td>
+            					<td class="one">
+            						<label for="relation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关系&nbsp;：</label>
+            					</td>
+            					<td>
+            						<select id="relation" class="tdall">
+            							<option value="##">&nbsp;</option>
+            							<option value="jia">家人</option>
+            							<option value="peng">朋友</option>
+            							<option value="tong">同学</option>
+            							<option value="shi">师生</option>
+            							<option value="colle">同事</option>
+            							<option value="other">...</option>
+            						</select>
+            					</td>
+            				</tr>
+            			</table>
+            			<!--留言区-->
+            			<table>
+            				<tr>
+            					<td class="one" colspan="2">
+            						<label for="word">欢迎留言！</label>
+            					</td>
+            				</tr>
+            				<tr>
+            					<td colspan="2">
+            						<textarea id="word" cols="600" rows="200"></textarea>
+            					</td>
+            				</tr>
+            			</table>
+ 
+            			<div class="third">
+            				<input type="submit" value="告诉她吧" />
+            				<input type="reset" value="晚会儿说" />
+            			</div>
+            </div>
+          </div>     
+          </form>
+          </div>
+		  <div class="foot">版权所有   @2024 王心悦个人网页</div>
+</body>
+</html>
+

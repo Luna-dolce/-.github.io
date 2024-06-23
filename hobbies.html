@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hobbies</title>
+		<link rel="stylesheet" type="text/css" href="common.css" />
+		<link rel="stylesheet" type="text/css" href="hobbies.css" />
+	</head>
+	<body>
+		<!--返回首页-->
+		<div class='ribbon'>
+		  <a href='./index.html'><span><< 返回首页</span></a>
+		</div>
+		<ul class="title">
+			<img class="bgc" src="img/1.jpg" width="100%" height=170px alt="">
+			<p class="titles">我的兴趣爱好...</p>
+		</ul>
+		<!-- 轮播 -->
+		<div class="box">
+			<ul class="items">
+				<li><img src="img/P18.jpg"/></li>
+				<li><img src="img/P20.jpg"/></li>
+				<li><img src="img/P21.jpg"/></li>
+				<li><img src="img/P17.jpg"/></li>
+				<li><img src="img/P22.jpg"/></li>
+				<li><img src="img/P9.jpg"/></li>
+			</ul>
+		</div>
+		<div class="films">
+			<p style="text-align: center;font-size: 23px;">无聊时喜欢看些电影.....</p>
+			<ul class="film">
+				<li><img src="img/D1.jpg" alt="film1"></li>
+				<li><img src="img/D2.jpg" alt="film2"></li>
+				<li><img src="img/D3.jpg" alt="film3"></li>
+				<li><p>《功夫熊猫》</p></li>
+				<li><p>《被我弄丢的你》</p></li>
+				<li><p>《热辣滚烫》</p></li>
+			</ul>
+		</div>
+		<div class="guzhengs">
+			<p>我喜欢学习古筝</p>
+			<ul class="guzheng">
+				<li><img src="img/G1.webp" alt=""></li>
+				<li>第一次听古筝的声音，真的被吸引到！古筝独特的声音，就连不会的人，假模假式地在古筝上随意挥动几下，也是超级好听！</li>
+				<li>喜欢传统文化的瘾。古筝作为优秀的中国传统文化的一部分，在古筝的雕刻，古筝的演奏技法，古筝的历史故事上都是有深刻内涵的。</li>
+				<li><img src="img/G2.webp" alt=""></li>
+			</ul>
+		</div>
+		<div class="photos">
+			<p class="photo_p">My 照片墙</p>
+			<ul class="photo">
+				<li><img src="img/P16.jpg" alt=""></li>
+				<li><img src="img/P2.jpg" alt=""></li>
+				<li><img src="img/P3.jpg" alt=""></li>
+				<li><img src="img/P4.jpg" alt=""></li>
+				<li><img src="img/P6.jpg" alt=""></li>
+				<li><img src="img/P7.jpg" alt=""></li>
+				<li><img src="img/P8.jpg" alt=""></li>
+				<li><img src="img/P10.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="delicacys">
+			<p class="delicacy_p">吃吃喝喝！！！</p>
+			<ul class="delicacy">
+				<li><img src="img/M1.jpg" alt=""></li>
+				<li><img src="img/M2.jpg" alt=""></li>
+				<li><img src="img/M3.jpg" alt=""></li>
+				<li><img src="img/M4.jpg" alt=""></li>
+				<li><img src="img/M5.jpg" alt=""></li>
+				<li><img src="img/M6.jpg" alt=""></li>
+				<li><img src="img/M7.jpg" alt=""></li>
+				<li><img src="img/M8.jpg" alt=""></li>
+				<li><img src="img/M9.jpg" alt=""></li>
+				<li><img src="img/M10.jpg" alt=""></li>
+				<li><img src="img/M11.jpg" alt=""></li>
+				<li><img src="img/M12.jpg" alt=""></li>
+			</ul>
+		</div>
+		<div class="foot">版权所有   @2024 王心悦个人网页</div>
+		<script>
+			var item = document.querySelectorAll('.items li')
+			var items = document.getElementsByClassName('items')[0]
+			var index = 0
+			for(let i=0;i<item.length;i++){
+				item[i].onclick = function(){
+					index = i
+					items.style.left = (-index * 800)+'px'
+				}
+			}
+		</script>
+	</body>
+</html>

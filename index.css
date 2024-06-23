@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    height: 100%;
+    overflow: hidden;             /* 超出部分隐藏 */
+}
+
+.content {
+    perspective: 340px;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+span {
+    display: block;
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    display: flex;
+    justify-content: center;           /* 弹性布局 */
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: auto;
+    bottom: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.titles {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 100px;
+    margin: auto;
+    bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.ribbon {
+    display: flex;
+    justify-content: center;           /* 弹性布局 */
+    position: absolute;
+    top: 310px;
+    width: 100%;
+    margin: auto;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.ribbon:after, .ribbon:before {
+    margin-top: 0.5em;
+    display: flex;
+    border: 1.5em solid #fff;
+}
+
+.ribbon:after {
+    border-right-color: transparent;
+}
+
+.ribbon:before {
+    border-left-color: transparent;
+}
+
+.ribbon a:link, .ribbon a:visited {
+    color: #000;
+    text-decoration: none;
+    height: 3.5em;
+    overflow: hidden;
+}
+
+.ribbon span {
+    background: #fff;
+    display: inline-block;
+    line-height: 3em;
+    padding: 0 1.5em;
+    margin-top: 0.5em;
+    position: relative;
+    -webkit-transition: background-color 0.2s, margin-top 0.2s;
+    -moz-transition: background-color 0.2s, margin-top 0.2s;
+    -ms-transition: background-color 0.2s, margin-top 0.2s;
+    -o-transition: background-color 0.2s, margin-top 0.2s;
+    transition: background-color 0.2s, margin-top 0.2s;
+}
+
+.ribbon a:hover span {
+    background: #b56ee5;
+    margin-top: 0;
+}
+
+.information {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.jj{
+	width: 260px;
+	margin: 0 auto 20px;
+    text-align: center;
+}
+.jj .img{
+	display: block;
+	width: 220px;
+	height: 220px;
+	box-sizing: border-box;
+	border-radius: 50%;
+	border: 3px solid #672b8c;
+	margin: 0 auto 20px;
+	background-image: url("img/information.jpg");
+	background-size: 210px;
+	background-position: 3px -20px;
+}
+.jj p{
+	line-height: 26px;
+	margin-bottom: 5px;
+}
+
+
+.introduce {
+    width: 100%;
+	height: 200px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+}
+
+.part{
+    width: 20%;
+	height: 85%;
+    float: left;
+    text-align: center;
+	border: 1px dashed;    /*虚线*/
+	padding-top: 20px;
+	position: relative;      /* 相对定位*/
+	overflow: hidden;        /*超出父盒子的都隐藏*/
+}    
+.part h2{
+    padding: 20px;
+    font-size: 20px;
+    font-style: italic;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.part p{
+	position: absolute;    /* 绝对定位*/
+	bottom: -100%;         /*把定位下调-1，这样就不显示P标签了*/
+	opacity: 0;         /* 透明度0*/
+	width: 100%;
+	height: 100%;
+	font-size: 25px;
+	color: #FFF;
+	line-height: 150px;
+	background-color: rgba(0, 0, 0, 0.3);
+	transition: all .5s;    /*设置动画*/
+}
+.part:hover .part_p{
+	bottom: 0;          /*把定位下调0，这样就显示P标签了*/
+	opacity: 1;           /* 透明度1*/
+}
+
+.foot{
+	width: 100%;
+	background-color: plum;
+	text-align: center;
+	line-height: 50px;
+	font-size: 14px;
+	color: #FFF;
+}
+.p{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+}
+#video{
+	width: 1000px;
+}

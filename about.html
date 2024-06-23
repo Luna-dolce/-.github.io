@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>About Me</title>
+		<link rel="stylesheet" type="text/css" href="common.css" />
+		<link rel="stylesheet" href="./about.css">
+	</head>
+	<body>
+		<!--返回首页-->
+		<div class='ribbon'>
+		  <a href='./index.html'><span><< 返回首页</span></a>
+		</div>
+		<!-- 主题 -->
+		<ul class="navas">
+			<!-- 主页面 -->
+			<li class="nava ">
+				<!-- 个人介绍 -->
+				<div id="nava_1">
+					<div class="nava_1_head"></div>
+					<p class="nava_1_well">读万卷书，行万里路。</p>
+					<hr class="nava_1_hr">
+					<p class="nava_1_name">王心悦</p>
+					<p class="nava_1_job">平平无奇的大二学生</p>
+					<p class="nava_1_number">电话:150****5648</p>
+				</div>
+			</li>
+			<!-- 基本资料 -->
+			<li class="nava nava2">
+				<p class="nava_title">基本资料</p>
+				<hr class="nava_hr">
+				<p class="nava_brief">就读于中南财经政法大学的信息管理与信息系统专业。熟悉C++程序设计、数据结构、算法分析与设计、操作系统原理、计算机网络、数据库系统原理、概率论
+与数理统计、大学英语、高等数学。</p>
+				<div class="nava_img"></div>
+				<ul class="nava_brief_ul">
+					<li>姓名  | 王心悦</li>
+					<li>手机 | 150****5648</li>
+					<li>性别 | 女</li>
+					<li>QQ | 160547318</li>
+					<li>学历 | 本科</li>
+					<li>学校 | 中南财经政法大学</li>
+					<li>专业 | 信息管理与信息系统专业</li>
+					<li>性格 | 文静可爱</li>
+				</ul>
+			</li>
+			<!-- 专业技能 -->
+			<li class="nava nava2">
+				<p class="nava_title">专业技能</p>
+				<hr class="nava_hr">
+				<p class="nava_brief">唯有勤学练，擅长最优先。</p>
+				<div class="nava_img1"></div>
+				<div class="nava_img2"></div>
+				<ul class="nava_brief_ul">
+					<li>1.编程语言：熟练掌握 C++，熟悉 Python 等编程语言，对编程语言的底层原理有一定了解</li>
+					<li>2.算法实现：掌握各种基础算法，如图像处理算法、模型处理算法等，能够独立完成复杂的算法实现</li>
+					<li>3.数据结构：熟练使用各种数据结构，如链表、哈希表、树、堆等，能够在图形学领域中灵活运用</li>
+					<li>4.数据分析：熟悉数据分析方法和工具，如Excel、Python和SQL等。能够通过数据分析找出问题症结和解决方案，并对分析结果进行可视化呈现。</li>
+					<li>5.办公室基本技能：熟练使用常见办公软件（如Microsoft Office套件、WPS），包括文字处理、电子表格和演示文稿等。</li>
+				</ul>
+			</li>
+		</ul>
+		<!-- 小圆点 -->
+		<ul class="min_navas">
+			<!-- 对应主页面 -->
+			<li></li>
+			<!-- 对应基本资料 -->
+			<li></li>
+			<!-- 对应专业技能 -->
+			<li></li>
+		</ul>
+		<img src="img/向下箭头.png" alt="向下箭头" id="next">
+		
+		<script>
+			var next = document.getElementById('next')     //定义下一个箭头
+			var minAll = document.querySelectorAll('.min_navas li')      //定义所有小圆点
+			var navaAll = document.querySelectorAll('.navas>li')         //
+			var index = 0
+			var a = 742.4
+			next.onclick = function(){
+				index++
+				window.scrollTo({top: a *index, behavior: 'smooth'})           //scollTo定位窗口,smooth 加缓慢动画
+				if(index >= minAll.length-1){
+					next.style.opacity = 0                                    //控制向下箭头的显示与消失
+				}else{
+					next.style.opacity = 1
+				}
+			}
+			for(let i=0;i<minAll.length;i++){
+				minAll[i].onclick = function(){
+					index = i
+					window.scrollTo({top: a *index, behavior: 'smooth'})
+					if(index >= minAll.length-1){
+						next.style.opacity = 0
+					}else{
+						next.style.opacity = 1
+					}
+				}
+				
+			}
+		</script>
+	</body>
+</html>

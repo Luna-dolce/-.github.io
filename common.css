@@ -1,0 +1,39 @@
+*{                /* 公共样式 */
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;   /*去掉下划线*/
+}
+/*返回首页按钮*/
+.ribbon {
+	width: 130px;     
+	height: 40px;
+	text-align: center;   /*文字水平居中*/
+	line-height: 40px;    /*文字上下居中*/
+  display: flex;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+  margin: auto;
+  border-radius: 1em;     /*给盒子添加圆角*/
+  box-shadow: 3px 0 10px rgb(54, 54, 54);    /* 盒子阴影 左右3像素 上下0 模糊10像素 */
+  transition: all .3s;         /*动画效果*/
+  z-index: 99;
+}
+.ribbon:hover{
+	width: 132px;
+	height: 41px;
+	background-color: rgb(130, 63, 206);
+	box-shadow: 10px 5px 20px rgb(54, 54, 54);    /* 盒子阴影 左右10像素 上下5px 模糊10像素 */
+}
+.ribbon a{
+	width: 130px;     /*让a的宽高等于父盒子的宽高*/
+	height: 40px;
+}
+.ribbon a:hover{
+color: #f0f0f0;
+letter-spacing: .2rem;
+}
+.ribbon a:hover span {
+  font-size: 1rem;  
+}
